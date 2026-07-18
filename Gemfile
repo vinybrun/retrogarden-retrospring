@@ -70,7 +70,7 @@ gem "tldv", "~> 0.1.0"
 
 gem "view_component"
 
-gem "jwt", "~> 2.10"
+gem "jwt", "~> 3.2"
 
 group :development do
   gem "binding_of_caller"
