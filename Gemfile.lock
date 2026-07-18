@@ -97,7 +97,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.3)
     base64 (0.3.0)
-    bcrypt (3.1.20)
+    bcrypt (3.1.22)
     benchmark (0.4.1)
     better_errors (2.10.1)
       erubi (>= 1.0.0)
@@ -614,7 +614,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_otp
-  bcrypt (~> 3.1.20)
+  bcrypt (~> 3.1.22)
   better_errors
   binding_of_caller
   bootsnap

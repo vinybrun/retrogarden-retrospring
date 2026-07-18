@@ -16,7 +16,7 @@ gem "pg"
 
 gem "turbo-rails"
 
-gem "bcrypt", "~> 3.1.20"
+gem "bcrypt", "~> 3.1.22"
 
 gem "active_model_otp"
 gem "bootsnap", require: false
