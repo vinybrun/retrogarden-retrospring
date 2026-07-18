@@ -128,7 +128,7 @@ GEM
     childprocess (5.0.0)
     chunky_png (1.4.0)
     colorize (1.1.0)
-    concurrent-ruby (1.3.5)
+    concurrent-ruby (1.3.7)
     connection_pool (2.5.3)
     crass (1.0.6)
     cssbundling-rails (1.4.3)
@@ -192,7 +192,7 @@ GEM
     fake_email_validator (1.0.11)
       activemodel
       mail
-    faker (3.5.2)
+    faker (3.8.0)
       i18n (>= 1.8.11, < 2)
     faraday (2.12.1)
       faraday-net_http (>= 2.0, < 3.5)
@@ -252,7 +252,7 @@ GEM
       csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
-    i18n (1.14.7)
+    i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     i18n-js (4.0.0)
       glob
