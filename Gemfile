@@ -41,7 +41,7 @@ gem "web-push"
 gem "rolify", "~> 6.0"
 
 gem "dry-initializer", "~> 3.2"
-gem "dry-types", "~> 1.8"
+gem "dry-types", "~> 1.9"
 
 gem "pghero"
 gem "rails_admin"
