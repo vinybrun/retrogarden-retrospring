@@ -20,7 +20,7 @@ gem "bcrypt", "~> 3.1.20"
 
 gem "active_model_otp"
 gem "bootsnap", require: false
-gem "bootstrap_form", "~> 5.0"
+gem "bootstrap_form", "~> 5.4"
 gem "carrierwave", "~> 2.1"
 gem "carrierwave_backgrounder", "~> 0.4.2"
 gem "colorize"
