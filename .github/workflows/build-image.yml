@@ -1,0 +1,58 @@
+---
+name: Build container image
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    tags: [ '*' ]
+  pull_request:
+    paths:
+      - .github/workflows/build-image.yml
+      - Containerfile
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: ${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - uses: actions/checkout@v5.0.0
+
+      - name: Discover build-time variables
+        run: |
+          echo "RUBY_VERSION=$(cat .ruby-version)" >> $GITHUB_ENV
+          echo "BUNDLER_VERSION=$(egrep -A1 "^BUNDLED WITH" Gemfile.lock | tr -d '\n' | awk '{ print $3; }')" >> $GITHUB_ENV
+          case "${{ github.ref_name }}" in
+          */merge)
+            # use commit id as version for pull requests
+            echo "RETROSPRING_VERSION=${{ github.sha }}" >> $GITHUB_ENV
+            ;;
+          *)
+            # use tags and branches as version otherwise
+            echo "RETROSPRING_VERSION=${{ github.ref_name }}" >> $GITHUB_ENV
+            ;;
+          esac
+
+      - name: Login to registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+        if: github.event_name != 'pull_request'
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          build-args: |
+            BUNDLER_VERSION=${{ env.BUNDLER_VERSION }}
+            RETROSPRING_VERSION=${{ env.RETROSPRING_VERSION }}
+            RUBY_VERSION=${{ env.RUBY_VERSION }}
+          context: .
+          file: Containerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ghcr.io/retrospring/retrospring:${{ env.RETROSPRING_VERSION }}

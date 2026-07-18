@@ -1,0 +1,77 @@
+### Ruby/Rails ###
+
+/.bundle
+.byebug_history
+
+/config/database.yml
+.env
+.env.development
+
+/coverage
+
+/log/*.log
+/tmp
+
+# precompiled assets/packs
+/app/assets/builds/*
+!/app/assets/builds/.keep
+/public/assets
+
+# RSpec example status persistence, used by e.g. `rspec --only-failures`
+/spec/examples.txt
+
+# node + yarn
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+
+### Retrospring-specific ###
+
+# site configuration
+/config/justask.yml
+
+# locales generated with `bin/rails locale:generate`
+/config/locales/*.en-xx.yml
+
+# local storage
+/public/export
+/public/system
+/public/users
+
+# dont push generated js translations to repository
+/app/javascript/retrospring/i18n.json
+
+
+### Operating systems / desktops ###
+
+# KDE
+.directory
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+
+### Editors ###
+
+# Emacs
+\#*\#
+.projectile
+
+# Kate
+.*.kate-swp
+
+# JetBrains IDEs (e.g. Rubymine)
+.idea/
+
+# vim
+*.swp
+*~
+
+# VS Code
+.vscode/

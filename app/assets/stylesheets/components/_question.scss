@@ -1,0 +1,30 @@
+@use "sass:map";
+
+.question {
+
+  &__avatar {
+    margin-right: map.get($spacers, 2);
+    border-radius: $avatar-border-radius;
+  }
+
+  &__text,
+  &__user {
+    margin-bottom: 0;
+    word-break: break-word;
+  }
+
+  &__text {
+    overflow: hidden;
+  }
+
+  &--sticky {
+    border-radius: 0;
+    width: 100%;
+
+    @include media-breakpoint-up('sm') {
+      position: sticky;
+      top: $navbar-height;
+      z-index: 1;
+    }
+  }
+}

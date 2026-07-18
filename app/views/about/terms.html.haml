@@ -1,0 +1,5 @@
+- provide(:title, generate_title('Terms of Service'))
+.container-lg.container--main
+  .card
+    .card-body
+      = t("policy.terms_of_service_html", app_name: APP_CONFIG["site_name"])

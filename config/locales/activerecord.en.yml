@@ -1,0 +1,127 @@
+en:
+  activerecord:
+    models:
+      announcement:
+        one: "Announcement"
+        other: "Announcements"
+      answer:
+        one: "Answer"
+        other: "Answers"
+      comment:
+        one: "Comment"
+        other: "Comments"
+      question:
+        one: "Question"
+        other: "Questions"
+      user:
+        one: "User"
+        other: "Users"
+    attributes:
+      announcement:
+        content: "Content"
+        link_href: "Link URL"
+        link_text: "Link text"
+        starts_at: "Start time"
+        ends_at: "End time"
+      profile:
+        anon_display_name: "Name for anonymous users"
+        description: "Biography"
+        display_name: "Your name"
+        location: "Location"
+        motivation_header: "Motivation header"
+        website: "Website"
+      theme:
+        background_color: "Background colour"
+        body_text: "Body text colour"
+        dark_color: "Dark colour"
+        dark_text: "Dark text colour"
+        danger_color: "Danger colour"
+        danger_text: "Danger text colour"
+        info_color: "Info colour"
+        info_text: "Info text colour"
+        input_color: "Input colour"
+        input_text: "Input text colour"
+        light_color: "Light colour"
+        light_text: "Light text colour"
+        muted_text: "Muted text colour"
+        primary_color: "Primary colour"
+        primary_text: "Primary text colour"
+        raised_accent: "Raised accent colour"
+        raised_accent_text: "Raised accent text colour"
+        raised_background: "Raised background colour"
+        raised_text: "Raised text colour"
+        success_color: "Success colour"
+        success_text: "Success text colour"
+        warning_color: "Warning colour"
+        warning_text: "Warning text colour"
+      reaction:
+        parent_id: "Target"
+      user:
+        created_at: "Account created at"
+        current_password: "Current password"
+        current_sign_in_at: "Current sign in at"
+        current_sign_in_ip: "Current sign in IP"
+        email: "Email"
+        last_sign_in_at: "Last sign in at"
+        last_sign_in_ip: "Last sign in IP"
+        locale: "Language"
+        login: "Username or Email"
+        remember_created_at: "Remember me set at"
+        password: "Password"
+        password_confirmation: "Confirm your password"
+        privacy_lock_inbox: "Lock inbox and don't allow new questions"
+        privacy_allow_anonymous_questions: "Allow anonymous questions"
+        privacy_require_user: "Require users to be logged in to ask you questions"
+        privacy_allow_public_timeline: "Show your answers in the public timeline"
+        privacy_allow_stranger_answers: "Allow other people to answer your questions"
+        privacy_noindex: "Prevent search engines from indexing your profile"
+        privacy_hide_social_graph: "Hide your social graph from others"
+        sharing_enabled: "Enable sharing"
+        sharing_autoclose: "Automatically hide inbox entry after sharing once"
+        sharing_custom_url: "Custom Share Link"
+        profile_picture: "Profile picture"
+        profile_header: "Profile header"
+        sign_in_count: "Sign in count"
+        screen_name: "Username"
+        show_foreign_themes: "Render other user themes when visiting their profile"
+        updated_at: "Account updated at"
+    help:
+      user:
+        screen_name: "Alphanumerical and underscores allowed, max. 16 characters"
+        email: "Don't forget to check your spam folder in case our email might have landed there!"
+        current_password: "We need your current password to confirm your changes"
+        sharing_enabled: "Shows a sharing dialog after answering a question from your inbox"
+        sharing_autoclose: "Use this if you mainly post to a single service"
+        sharing_custom_url: "Example: https://mastodon.social/share?text="
+      profile:
+        anon_display_name: "This name will be used for questions asked to you by anonymous users."
+        motivation_header: "Shown in the header of the question box on your profile. Motivate users to ask you questions!"
+      theme:
+        danger_color: "Colour used for errors or critical actions like deleting something."
+        info_color: "Colour used for informational popups or messages."
+        primary_color: "The primary/brand colour of the site, used for navigation, links, etc."
+        success_color: "Colour used for messages if something went through successfully."
+        warning_color: "Colour used for warnings if something non-critical has happened."
+    validation:
+      user:
+        screen_name:
+          format: "contains invalid characters"
+    errors:
+      messages:
+        invalid_url: "does not look like a valid URL"
+      models:
+        reaction:
+          attributes:
+            parent_id:
+              taken: "already smiled"
+  helpers:
+    submit:
+      user:
+        new: "Sign in"
+        create: :voc.register
+        update: :voc.save
+      profile:
+        update: :voc.save
+      theme:
+        create: :voc.save
+        update: :voc.save

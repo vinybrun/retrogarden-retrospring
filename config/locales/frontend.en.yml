@@ -1,0 +1,67 @@
+en:
+  frontend:
+    load: "Load more"
+    success:
+      title: "Success!"
+    error:
+      title: "Uh-oh…"
+      message: "An error occurred, a developer should check the console for details"
+    list:
+      confirm:
+        title: "Are you sure?"
+        text: "You will not be able to recover this list."
+      item:
+        members:
+          zero: "No members"
+          one: "1 member"
+          other: "%{count} members"
+    destroy_question:
+      confirm:
+        title: "Are you sure?"
+        text: "The question will be moved back to your inbox, but it won't delete any posts to social media."
+    destroy_comment:
+      confirm:
+        title: "Are you sure?"
+        text: "You will not be able to recover this comment."
+    destroy_report:
+      confirm:
+        title: "Are you sure?"
+        text: "You will not be able to recover this report."
+    destroy_own:
+      confirm:
+        title: "Are you sure?"
+        text: "The question will be removed."
+    inbox:
+      empty: "Nothing to see here."
+      confirm_all:
+        title: "Are you sure you want to delete %{count} questions?"
+        text: "They will be gone forever."
+      confirm:
+        title: "Are you sure?"
+        text: "This question will be gone forever."
+    mod_mute:
+      confirm:
+        title: "Are you sure?"
+        text: "This will mute this user for everyone."
+    push_notifications:
+      subscribe:
+        success:
+          title: Push notifications enabled!
+          body: You will now receive push notifications for new questions on this device.
+        fail:
+          title: Failed to subscribe to push notifications
+          body: Please try again later
+      unsubscribe:
+        success: Push notifications disabled successfully.
+        fail: Failed to disable push notifications.
+      setup_fail: Failed to set up push notifications. Please try again later.
+      inbox:
+        title: New question from %{user}
+    report:
+      confirm:
+        title: "Are you sure you want to report this %{type}?"
+        text: "A moderator will review your report and decide what happens.\nYou can optionally specify a reason."
+        input: "Specify a reason…"
+    clipboard_copy:
+      success: "Content copied to clipboard."
+      error: "Failed to copy content to clipboard."

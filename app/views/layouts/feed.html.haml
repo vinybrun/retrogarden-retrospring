@@ -1,0 +1,8 @@
+.container-lg.container--main
+  .row
+    .col-sm-10.col-md-10.col-lg-9.mx-auto
+      = render 'layouts/messages'
+      = render 'tabs/feed', lists: @lists, list: @list
+      = yield
+
+= render 'shared/links'

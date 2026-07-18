@@ -1,0 +1,30 @@
+.list-group-item {
+  background-color: transparent;
+
+  &.active,
+  &.active:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+
+    a {
+      color: var(--primary-text);
+    }
+  }
+}
+
+.list-group-item-action {
+  color: RGB(var(--raised-text));
+
+  &:hover, &:focus {
+    color: RGB(var(--raised-accent-text));
+    background-color: var(--raised-accent);
+  }
+
+  .badge {
+    color: RGB(var(--body-text));
+  }
+
+  &.active .badge {
+    color: RGB(var(--primary-text));
+  }
+}

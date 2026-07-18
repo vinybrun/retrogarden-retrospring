@@ -1,0 +1,22 @@
+@use "sass:map";
+
+.card {
+  margin-bottom: map.get($spacers, 3);
+  box-shadow: $box-shadow-sm;
+  background-color: var(--raised-bg);
+  color: RGB(var(--raised-text));
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &--fullheight {
+    height: calc(100% - #{map.get($spacers, 3)});
+  }
+}
+
+.card-header,
+.card-footer {
+  background-color: var(--raised-accent);
+  color: RGB(var(--raised-accent-text));
+}

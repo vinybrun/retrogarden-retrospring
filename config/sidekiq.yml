@@ -1,0 +1,23 @@
+---
+:concurrency: 5
+:pidfile: ./tmp/pids/sidekiq.pid
+staging:
+  :concurrency: 5
+production:
+  :concurrency: 5
+:queues:
+  - default
+  - share
+  - carrierwave
+  - mailers
+  - question
+  - export
+  - push_notification
+  - scheduler
+
+:scheduler:
+  :schedule:
+    inbox_cleanup:
+      every: 1m
+      class: Scheduler::InboxCleanupScheduler
+      queue: scheduler

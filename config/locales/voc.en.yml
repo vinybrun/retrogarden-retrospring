@@ -1,0 +1,85 @@
+en:
+  voc:
+    add: "Add"
+    all: "All"
+    answer: "Answer"
+    block: "Block"
+    block_site_wide: "Block user site-wide"
+    cancel: "Cancel"
+    close: "Close"
+    confirm: "Are you sure?"
+    delete: "Delete"
+    edit: "Edit"
+    filter: "Filter"
+    follow: "Follow"
+    format_markdown: "Styling with Markdown is supported"
+    load: "Load more"
+    loading: "Loading…"
+    login: "Sign in"
+    logout: "Sign out"
+    mute: "Mute"
+    save: "Save changes"
+    show_anonymous_questions: "Show all questions from this user"
+    smile: "Smile"
+    subscribe: "Subscribe"
+    unsubscribe: "Unsubscribe"
+    register: "Sign up"
+    register_now: "Register now"
+    remove: "Remove"
+    report: "Report"
+    terms: "Terms of Service"
+    unblock: "Unblock"
+    unfollow: "Unfollow"
+    unmute: "Unmute"
+    update: "Update"
+    view_in_rails_admin: "View in Rails Admin"
+    "y": "Yes"
+    "n": "No"
+  messages:
+    noauth: "You need to be logged in to perform this action."
+  time:
+    distance_ago: "%{time} ago"
+    hours: "hours"
+    days: "days"
+    weeks: "weeks"
+    months: "months"
+  datetime:
+    distance_in_words:
+      short:
+        about_x_hours:
+          one: "1h"
+          other: "%{count}h"
+        about_x_months:
+          one: "1mo"
+          other: "%{count}mo"
+        about_x_years:
+          one: "1y"
+          other: "%{count}y"
+        almost_x_years:
+          one: "1y"
+          other: "%{count}y"
+        half_a_minute: 1m
+        less_than_x_seconds:
+          one: "1s"
+          other: "%{count}s"
+        less_than_x_minutes:
+          one: "1m"
+          other: "%{count}m"
+        over_x_years:
+          one: "1y"
+          other: "%{count}y"
+        x_seconds:
+          one: "1s"
+          other: "%{count}s"
+        x_minutes:
+          one: "1m"
+          other: "%{count}m"
+        x_days:
+          one: "1d"
+          other: "%{count}d"
+        x_months:
+          one: "1mo"
+          other: "%{count}mo"
+        x_years:
+          one: "1y"
+          other: "%{count}y"

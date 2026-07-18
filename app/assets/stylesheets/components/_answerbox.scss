@@ -1,0 +1,101 @@
+@use "sass:map";
+
+.answerbox {
+  &__answer-user,
+  &__answer-date {
+    margin-bottom: 0;
+    overflow: hidden;
+    word-break: break-word;
+  }
+
+  &__answer-date {
+    font-size: .8rem;
+    line-height: .8;
+    overflow: visible;
+  }
+
+  .card-header,
+  &__answer-body {
+    position: relative;
+  }
+
+  &__answer-text {
+    margin-bottom: map.get($spacers, 3);
+  }
+
+  &__answer-user-avatar {
+    margin-right: map.get($spacers, 2);
+    border-radius: $avatar-border-radius;
+  }
+
+  & .text-muted a,
+  & .text-muted a:hover {
+    color: var(--muted-text);
+    text-decoration: none;
+  }
+
+  &__action {
+    color: RGBA(var(--raised-text), 0.75);
+    padding: var(--btn-padding-y);
+    margin-right: map.get($spacers, 1);
+    text-decoration: none;
+
+    & i {
+      font-size: 1.4rem;
+      vertical-align: top;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: RGBA(var(--raised-text), 1);
+      text-decoration: none;
+    }
+
+    &.smile {
+      color: var(--primary);
+
+      &:hover {
+        color: var(--success);
+      }
+    }
+
+    &.unsmile {
+      color: var(--success);
+
+      &:hover {
+        color: var(--danger);
+      }
+    }
+
+    &.dropdown-toggle::after {
+      margin-left: 0;
+    }
+  }
+
+  &__actions {
+    text-align: right;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    @include media-breakpoint-up('sm') {
+      justify-content: flex-end;
+      padding-top: 0;
+    }
+  }
+
+  &__pinned {
+    display: none;
+  }
+
+  .card-body {
+    padding-bottom: .6rem;
+  }
+}
+
+#pinned-answers {
+
+  .answerbox__pinned {
+    display: inline;
+  }
+}
