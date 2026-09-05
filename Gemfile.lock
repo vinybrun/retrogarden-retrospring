@@ -361,7 +361,7 @@ GEM
       prettyprint
     prettyprint (0.2.0)
     prism (1.4.0)
-    prometheus-client (4.2.5)
+    prometheus-client (5.0.0)
       base64
     psych (5.2.6)
       date
@@ -657,7 +657,7 @@ DEPENDENCIES
   openssl (~> 3.3)
   pg
   pghero
-  prometheus-client (~> 4.2)
+  prometheus-client (~> 5.0)
   puma
   pundit (~> 2.5)
   questiongenerator (~> 1.1)

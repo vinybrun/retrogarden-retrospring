@@ -120,4 +120,4 @@ gem "openssl", "~> 3.3"
 # mail 2.8.0 breaks sendmail usage: https://github.com/mikel/mail/issues/1538
 gem "mail", "~> 2.7.1"
 
-gem "prometheus-client", "~> 4.2"
+gem "prometheus-client", "~> 5.0"
