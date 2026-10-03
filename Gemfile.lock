@@ -333,9 +333,9 @@ GEM
       net-protocol
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.2.2)
+    net-protocol (0.4.0)
       timeout
-    net-smtp (0.5.1)
+    net-smtp (0.5.2)
       net-protocol
     nio4r (2.7.4)
     nokogiri (1.18.9-aarch64-linux-gnu)
@@ -572,7 +572,7 @@ GEM
     temple (0.10.4)
     thor (1.4.0)
     tilt (2.6.1)
-    timeout (0.4.3)
+    timeout (0.6.1)
     tldv (0.1.0)
       tldv-data (~> 1.0)
     tldv-data (1.0.2023080900)
